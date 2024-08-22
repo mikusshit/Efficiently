@@ -1,70 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
-    background-color: rgb(218, 218, 222);
-    font-family: Helvetica, sans-serif
+    font-family: 'Inter Tight', sans-serif;
+    background-image:  url(bg.png);
+    background: rgb(63,94,251);
+    background: -moz-radial-gradient(circle at center, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background: -webkit-radial-gradient(circle at center, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background: radial-gradient(circle at center, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endColorstr="#fc466b",GradientType=1); 
 }
+#container {
+    width: 100%;
+    height: 100%;
+    margin-top: 200px;
+
+}
+
+button {
+    border-radius: 50px;
+    margin-top: 200px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: white;
+    width:100px; 
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    cursor: pointer;
+    transition: background-color 0.5s;
+
+}
+.title {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgba(255, 158, 232, 0.715)
+}
+
 #start {
-    background-color: green;
-    border: none;
-    color: white;
-    height:20px; 
-    width:100px; 
-    margin: -20px -50px; 
-    position:relative;
-    top:50%; 
     left:50%;
-    cursor: pointer;
-    transition: background-color 0.5s;
+
 
 }
 
-#stop {
-    background-color: green;
-    border: none;
-    color: white;
-    height:20px; 
-    width:100px; 
-    margin: -20px -50px; 
-    position:relative;
-    top:50%; 
+#break {
     left:40%;
-    cursor: pointer;
-    transition: background-color 0.5s;
+
 
 }
 #reset {
-    background-color: green;
-    border: none;
-    color: white;
-    height:20px; 
-    width:100px; 
-    margin: -20px -50px; 
-    position:relative;
-    top:50%; 
     left:60%;
-    cursor: pointer;
-    transition: background-color 0.5s;
+
 }
 
-
-#start:hover {
-    background-color: rgb(24, 146, 58);
+button:hover {
+    background-color: rgb(123, 123, 123);
 }
-#reset:hover {
-    background-color: rgb(24, 146, 58);
-}
-#stop:hover {
-    background-color: rgb(24, 146, 58);
-}
-#start:active {
-    background-color: rgb(36, 189, 79); }
-#reset:active {
-    background-color: rgb(36, 189, 79); }
-#stop:active {
-    background-color: rgb(36, 189, 79); }
-
-
-
-
+button:active {
+    background-color: rgb(75, 75, 75); }
 
 #time {
     color: white;
